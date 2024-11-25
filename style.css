@@ -18,8 +18,8 @@
   margin-bottom: 20px;
 }
 .pry-btn {
-  width: 180px;
-  height: 64px;
+  width: 150px;
+  height: 55px;
   border-radius: 8px;
   border: 0;
   background: #ff900e;
@@ -34,16 +34,16 @@
 /* navigation style */
 header {
   background: #ff900e1a;
+  padding: 20px 100px;
 }
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 150px;
 }
 .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .nav-links > li {
   list-style: none;
@@ -67,7 +67,7 @@ header {
 }
 .banner-title {
   color: #131313;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -89,20 +89,29 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border: 1px solid brown;
-  /* text-align: center; */
 }
 .features-team {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  width: 50px;
-  border: 1px solid brown;
+  gap: 15px;
+  width: 50%;
+}
+.features-team img {
+  width: 100%;
 }
 .features-content {
   width: 50%;
   margin-left: 50px;
-  border: 1px solid brown;
+}
+.title-quick {
+  color: #727272;
+  font-weight: 500;
+}
+.title-features {
+  color: #ff900e;
+}
+.features-pera {
+  text-align: left;
 }
 /* responsive design */
 /* responsive for phone */
@@ -110,34 +119,63 @@ section {
   .hide {
     display: none;
   }
+  header {
+    padding: 5px;
+  }
   .navigation {
-    padding: 20px;
+    padding: 20px 0px;
     flex-direction: column;
+  }
+  .title {
+    font-size: 2rem;
   }
   .nav-links > li {
     margin-right: 15px;
-
   }
   .banner-content {
     width: 100%;
   }
+
   .banner-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .pera-style {
     text-align: justify;
   }
+  .pry-btn {
+    width: 120px;
+    height: 45px;
+    font-size: 1rem;
+  }
+  .features-container {
+    flex-direction: column;
+  }
+  .features-team {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .features-content {
+    width: 100%;
+    margin: 30px auto;
+  }
 }
+
 /* responsive for tablet */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .hide {
     display: none;
   }
+  header {
+    padding: 5px;
+  }
   .navigation {
     padding: 20px;
     flex-direction: column;
   }
-  
+  .title {
+    font-size: 2rem;
+  }
   .nav-links > li {
     padding: 15px;
     margin-right: 35px;
@@ -147,9 +185,24 @@ section {
     width: 100%;
   }
   .banner-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .pera-style {
     text-align: justify;
+  }
+  .pry-btn {
+    width: 120px;
+    height: 45px;
+    font-size: 1rem;
+  }
+  .features-container {
+    flex-direction: column;
+  }
+  .features-team {
+    width: 100%;
+  }
+  .features-content {
+    width: 100%;
+    margin: 30px auto;
   }
 }
